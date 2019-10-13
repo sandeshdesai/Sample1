@@ -1,9 +1,8 @@
-def name="Sandesh"
 pipeline {
     agent any
-    
+    def name="Sandesh"    
     stages {
-        stage("Name - ${name}" ) {
+        stage("Name" ) {
             steps {
             echo "My name is ${name}"
             }
