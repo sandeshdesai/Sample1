@@ -1,6 +1,9 @@
+def name="Sandesh"
 pipeline {
     agent any
-    def name="Sandesh"    
+    enviroment {
+        BUILD_DISPLAY_NAME="Madhura"
+    }
     stages {
         stage("Name" ) {
             steps {
