@@ -4,7 +4,9 @@ pipeline {
     
     stages {
         stage("Name" ) {
+            steps {
             echo "My name is ${name}"
+            }
         }
         stage('display env variables'){
             steps {
