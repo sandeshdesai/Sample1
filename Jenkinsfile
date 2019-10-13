@@ -1,7 +1,10 @@
 pipeline {
     agent any
-    checkout scm
+    def name="Sandesh"
     stages {
+        stage("My name is $name" ) {
+            
+        }
         stage('display env variables'){
             steps {
                 echo "${BUILD_NUMBER}"
