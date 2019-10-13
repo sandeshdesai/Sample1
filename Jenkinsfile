@@ -11,6 +11,25 @@ pipeline {
                 echo "hello sandesh"
             }
         }
+        stage('display env variables'){
+            stage {
+                echo 'env.BRANCH_NAME'
+                echo 'env.BUILD_NUMBER'
+                echo 'env.BUILD_ID'
+                echo 'env.BUILD_DISPLAY_NAME'
+                echo 'env.JOB_NAME'
+                echo 'env.JOB_BASE_NAME'
+                echo 'env.BUILD_TAG'
+                echo 'env.EXECUTOR_NUMBER'
+                echo 'env.NODE_NAME'
+                echo 'env.NODE_LABELS'
+                echo 'env.WORKSPACE'
+                echo 'env.JENKINS_HOME'
+                echo 'env.JENKINS_URL'
+                echo 'env.BUILD_URL'
+                echo 'env.JOB_URL'
+            }
+        }
     
     }
 }
