@@ -1,10 +1,9 @@
 pipeline {
     agent any
+    checkout scm
     stages {
         stage('display env variables'){
             steps {
-                //echo "${BRANCH_NAME}"
-                echo "${currentBuild.currentResult}"
                 echo "${BUILD_NUMBER}"
                 echo "${BUILD_ID}"
                 echo "${BUILD_DISPLAY_NAME}"
