@@ -3,7 +3,7 @@ pipeline {
     agent any
     
     stages {
-        stage("Name" ) {
+        stage("Name - ${name}" ) {
             steps {
             echo "My name is ${name}"
             }
