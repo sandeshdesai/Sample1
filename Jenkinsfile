@@ -1,9 +1,10 @@
+def name="Sandesh"
 pipeline {
     agent any
-    def name="Sandesh"
+    
     stages {
-        stage("My name is ${name}" ) {
-
+        stage("Name" ) {
+            echo "My name is ${name}"
         }
         stage('display env variables'){
             steps {
