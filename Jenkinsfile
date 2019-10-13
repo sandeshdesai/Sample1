@@ -13,7 +13,7 @@ pipeline {
         }
         stage('display env variables'){
             steps {
-                echo 'env.BRANCH_NAME'
+                echo env.BRANCH_NAME
                 echo 'env.BUILD_NUMBER'
                 echo 'env.BUILD_ID'
                 echo 'env.BUILD_DISPLAY_NAME'
