@@ -4,6 +4,7 @@ pipeline {
         stage('display env variables'){
             steps {
                 //echo "${BRANCH_NAME}"
+                echo "currentbuild().displayName"
                 echo "${BUILD_NUMBER}"
                 echo "${BUILD_ID}"
                 echo "${BUILD_DISPLAY_NAME}"
