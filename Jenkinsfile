@@ -21,6 +21,22 @@ pipeline {
                 echo "${JOB_URL}"
             }
         }
-    
+        stage('display build variables') {
+            steps {
+                echo "${currentBuild.number}"
+                echo "${currentBuild.result}"
+                echo "${currentBuild.currentResult}"
+                echo "${currentBuild.displayName}"
+                echo "${currentBuild.fullDisplayName}"
+                echo "${currentBuild.projectName}"
+                echo "${currentBuild.fullProjectName}"
+                echo "${currentBuild.id}"
+                echo "${currentBuild.timeInMillis}"
+                echo "${currentBuild.startTimeInMillis}"
+                echo "${currentBuild.duration}"
+                echo "${currentBuild.durationString}"
+                echo "${currentBuild.absoluteUrl}"
+            }
+        }
     }
 }
