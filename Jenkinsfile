@@ -3,6 +3,7 @@ pipeline {
     agent any
     environment {
         BUILD_DISPLAY_NAME="Madhura"
+        tempVar="1012E, 888 Collins Street"
     }
     stages {
         stage("Name" ) {
@@ -12,6 +13,7 @@ pipeline {
         }
         stage('display env variables'){
             steps {
+                echo "${tempVar}"
                 echo "${BUILD_NUMBER}"
                 echo "${BUILD_ID}"
                 echo "New Name is ->${BUILD_DISPLAY_NAME}"
