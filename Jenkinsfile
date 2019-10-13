@@ -5,9 +5,6 @@ pipeline {
             steps {
                 echo "hello world"
             }
-            steps {
-                echo 'hello sandesh'
-            }
         }
     }
 }
