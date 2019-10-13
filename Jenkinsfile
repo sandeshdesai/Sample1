@@ -1,9 +1,12 @@
-def name="Sandesh"
+//def name="Sandesh"
 pipeline {
     agent any
     environment {
         BUILD_DISPLAY_NAME="Madhura"
         tempVar="1012E, 888 Collins Street"
+    }
+    parameters {
+        string (name: 'Your name please', default: 'no name', description: 'please tell me your name')
     }
     stages {
         stage("Name" ) {
