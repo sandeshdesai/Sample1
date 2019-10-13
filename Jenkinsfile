@@ -14,7 +14,7 @@ pipeline {
         stage('display env variables'){
             steps {
                 //echo "${BRANCH_NAME}"
-                echo '${BUILD_NUMBER}'
+                echo "${BUILD_NUMBER}"
                 echo '${BUILD_ID}'
                 echo '${BUILD_DISPLAY_NAME'
                 echo '${JOB_NAME'
