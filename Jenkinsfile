@@ -2,7 +2,7 @@
 pipeline {
     agent any
     environment {
-        BUILD_DISPLAY_NAME="Madhura"
+        BUILD_DISPLAY_NAME="Madhura Prabhukhanolkar"
         tempVar="1012E, 888 Collins Street"
     }
     parameters {
