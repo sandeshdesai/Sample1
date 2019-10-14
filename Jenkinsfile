@@ -7,6 +7,7 @@ pipeline {
     }
     parameters {
         string (name: 'name', defaultValue: '', description: 'your name')
+        string (last name: 'last name', defaultValue: '', description: 'your last name')
     }
     stages {
         stage("Name" ) {
