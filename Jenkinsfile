@@ -6,8 +6,7 @@ pipeline {
         tempVar="1012E, 888 Collins Street"
     }
     parameters {
-        string (name: 'name', defaultValue: '', description: 'your name'),
-        string (last name: 'last name', defaultValue: '', description: 'your last name')
+        string (name: 'name1', defaultValue: '', description: 'your name')
     }
     stages {
         stage("Name" ) {
